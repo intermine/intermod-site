@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 600
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 800
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff') format('woff')
+}
+
+body
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+    margin: 0
+
+ul
+    list-style-type: none
+
+table
+    border-collapse: collapse
+    border: 0
+    width: 100%
+
+h2
+    font-size: 28px
+
+h3
+    font-size: 24px
+
+h2, h3
+    span
+        color: #999
+
+header#top
+    padding: 20px
+
+    a.brand
+        background: url('../img/224x68.png') no-repeat top left
+        width: 224px
+        height: 68px
+        display: block
+
+    nav
+        ul
+            margin: 25px 0 0 0
+
+            li
+                display: inline-block
+
+                &:not(:first-child)
+                    margin-left: 10px
+
+                a
+                    color: #444
+                    padding: 9px 10px 11px
+                    text-shadow: 0 -1px 0 rgba(255,255,255,.25)
+
+                    &:hover
+                        border-bottom: 1px solid #ccc
+
+                    &.active
+                        border-bottom: 1px solid #aaa
+
+section#hero
+    background: #F6F7F6 url('../img/bg2.png') repeat-x top left
+    padding-top: 20px
+
+    table#grid
+        background: transparent
+
+        tr
+            background: transparent
+
+            td
+                &:not(:last-child)
+                    border-right: 1px dashed #ddd
+
+            &:not(:last-child)
+                td
+                    border-bottom: 1px dashed #ddd
+
+section#content
+    background: #FBFBFB url('../img/bg1.png') repeat-x top left
+    padding: 20px 0 10px 0
+
+footer#bottom
+    padding-top: 20px
+    background: url('../img/bg3.png')
+    color: #ccc
+    font-size: 11px
