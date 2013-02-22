@@ -1,4 +1,4 @@
-# blað example site
+# InterMOD site
 
 An example site powered by [blað](https://github.com/radekstepan/blad) CMS.
 

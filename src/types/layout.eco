@@ -4,8 +4,8 @@
 
     <title>InterMOD</title>
 
-    <link rel="stylesheet" href="css/foundation3.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/site/css/foundation3.css">
+    <link rel="stylesheet" href="/site/css/style.css">
 </head>
 <body>
     <header id="top">
@@ -38,14 +38,14 @@
                     <table id="grid">
                         <tbody>
                             <tr>
-                                <td><a href="#"><img src="img/wwf.png" /></a></td>
-                                <td><a href="#"><img src="img/wwf.png" /></a></td>
-                                <td><a href="#"><img src="img/wwf.png" /></a></td>
+                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
                             </tr>
                             <tr>
-                                <td><a href="#"><img src="img/wwf.png" /></a></td>
-                                <td><a href="#"><img src="img/wwf.png" /></a></td>
-                                <td><a href="#"><img src="img/wwf.png" /></a></td>
+                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -70,10 +70,7 @@
                         mollis euismod. Donec sed odio dui.</p>
                 </div>
                 <div class="four columns">
-                    <h3><span>We're</span> Cambridge!</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                        mollis euismod. Donec sed odio dui.</p>
+                    <%- @page %>
                 </div>
             </div>
         </div>

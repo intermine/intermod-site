@@ -1,10 +1,11 @@
 {
-    "mongodb": "mongodb://localhost:27017/documents",
+    "mongodb": "mongodb://localhost:27017/intermod",
     "browserid": {
         "provider": "https://browserid.org/verify",
         "salt":     "Q?RAf!CAkus?ejuCruKu",
         "users": [
-            "radek.stepan@gmail.com"
+            "radek.stepan@gmail.com",
+            "julie@flymine.org"
         ]
     }
 }
