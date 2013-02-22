@@ -1,3 +1,5 @@
+$bondi = #039CAE
+
 @font-face {
     font-family: 'Open Sans'
     font-style: normal
@@ -33,6 +35,12 @@ body
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
     margin: 0
 
+a
+    color: $bondi
+
+    &:hover
+        color: darken($bondi, 10%)
+
 ul
     list-style-type: none
 
@@ -50,6 +58,31 @@ h3
 h2, h3
     span
         color: #999
+
+p
+    text-align: justify
+
+address
+    font-style: normal
+    line-height: 1.6
+
+span.date
+    color: grey
+    line-height: 1.6
+    display: block
+    margin-bottom: 10px
+
+a.button
+    background: $bondi
+    padding: 7px 14px
+    //text-align: center
+    //display: inline-block
+    //border-radius: 2px
+    //color: #FFF
+    text-transform: uppercase
+
+    &:hover
+        background: darken($bondi, 20%)
 
 header#top
     padding: 20px
@@ -83,7 +116,7 @@ header#top
 
 section#hero
     background: #F6F7F6 url('../img/bg2.png') repeat-x top left
-    padding-top: 20px
+    padding: 30px 0 20px 0
 
     table#grid
         background: transparent
@@ -95,16 +128,25 @@ section#hero
                 &:not(:last-child)
                     border-right: 1px dashed #ddd
 
+                img
+                    opacity: 0.8
+
+                &:hover
+                    img
+                        opacity: 1
+
             &:not(:last-child)
                 td
                     border-bottom: 1px dashed #ddd
 
 section#content
     background: #FBFBFB url('../img/bg1.png') repeat-x top left
-    padding: 20px 0 10px 0
+    padding: 20px 0
 
 footer#bottom
-    padding-top: 20px
+    padding: 30px 0
     background: url('../img/bg3.png')
     color: #ccc
-    font-size: 11px
+
+    address, p, li
+        font-size: 11px

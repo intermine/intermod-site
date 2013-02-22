@@ -32,6 +32,12 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
+a {
+  color: #039cae;
+}
+a:hover {
+  color: #038c9d;
+}
 ul {
   list-style-type: none;
 }
@@ -49,6 +55,27 @@ h3 {
 h2 span,
 h3 span {
   color: #999;
+}
+p {
+  text-align: justify;
+}
+address {
+  font-style: normal;
+  line-height: 1.6;
+}
+span.date {
+  color: #808080;
+  line-height: 1.6;
+  display: block;
+  margin-bottom: 10px;
+}
+a.button {
+  background: #039cae;
+  padding: 7px 14px;
+  text-transform: uppercase;
+}
+a.button:hover {
+  background: #027d8b;
 }
 header#top {
   padding: 20px;
@@ -81,7 +108,7 @@ header#top nav ul li a.active {
 }
 section#hero {
   background: #f6f7f6 url("../img/bg2.png") repeat-x top left;
-  padding-top: 20px;
+  padding: 30px 0 20px 0;
 }
 section#hero table#grid {
   background: transparent;
@@ -92,16 +119,26 @@ section#hero table#grid tr {
 section#hero table#grid tr td:not(:last-child) {
   border-right: 1px dashed #ddd;
 }
+section#hero table#grid tr td img {
+  opacity: 0.8;
+}
+section#hero table#grid tr td:hover img {
+  opacity: 1;
+}
 section#hero table#grid tr:not(:last-child) td {
   border-bottom: 1px dashed #ddd;
 }
 section#content {
   background: #fbfbfb url("../img/bg1.png") repeat-x top left;
-  padding: 20px 0 10px 0;
+  padding: 20px 0;
 }
 footer#bottom {
-  padding-top: 20px;
+  padding: 30px 0;
   background: url("../img/bg3.png");
   color: #ccc;
+}
+footer#bottom address,
+footer#bottom p,
+footer#bottom li {
   font-size: 11px;
 }
