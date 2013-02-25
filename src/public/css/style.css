@@ -115,6 +115,9 @@ section#hero table#grid {
 section#hero table#grid tr {
   background: transparent;
 }
+section#hero table#grid tr td {
+  vertical-align: middle;
+}
 section#hero table#grid tr td:not(:last-child) {
   border-right: 1px dashed #ddd;
 }

@@ -1,0 +1,10 @@
+<div class="six columns">
+    <label>Model organism project url</label>
+    <input type="text" name="link" value="<%= @link %>" />
+</div>
+
+<div class="three columns">
+    <label>Model organism project logo</label>
+    <input type="hidden" name="logo" value="<%= @logo %>" />
+    <input type="file" data-custom="file" data-target="logo" />
+</div>

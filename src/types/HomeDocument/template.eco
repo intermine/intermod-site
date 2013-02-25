@@ -9,16 +9,13 @@
             <div class="eight columns">
                 <table id="grid">
                     <tbody>
-                        <tr>
-                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                        </tr>
+                        <% for row in @mods: %>
+                            <tr>
+                                <% for mod in row: %>
+                                    <td><a href="<%= mod.link %>" target="_blank"><img src="<%- mod.logo %>" /></a></td>
+                                <% end %>
+                            </tr>
+                        <% end %>
                     </tbody>
                 </table>
             </div>
