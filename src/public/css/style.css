@@ -131,7 +131,7 @@ section#hero table#grid tr:not(:last-child) td {
   border-bottom: 1px dashed #ddd;
 }
 section#content {
-  background: #fbfbfb url("../img/bg1.png") repeat-x top left;
+  background: #fff url("../img/bg1.png") repeat-x top left;
   padding: 20px 0;
 }
 section#content table {
