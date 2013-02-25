@@ -24,57 +24,7 @@
         </div>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
-                    <h2><span>Lorem ipsum</span> dolor sit amet per qilibtis</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                        commodo, tortor <a href="#">mauris condimentum</a> nibh, ut fermentum massa justo
-                        sit amet risus. Etiam porta sem.</p>
-                    <p><a class="button" href="#">Call to action</a></p>
-                </div>
-                <div class="eight columns">
-                    <table id="grid">
-                        <tbody>
-                            <tr>
-                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                                <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="content">
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
-                    <h3><span>We're</span> Creative</h3>
-                    <span class="date">February 13, 2013</span>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam porta.</p>
-                </div>
-                <div class="four columns">
-                    <h3><span>We're</span> better than Oxford</h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                        mollis euismod. Donec sed odio dui.</p>
-                </div>
-                <div class="four columns">
-                    <%- @page %>
-                </div>
-            </div>
-        </div>
-    </section>
+    <%- @page %>
 
     <footer id="bottom">
         <div class="container">
@@ -91,6 +41,15 @@
                 </div>
                 <div class="four columns">
                     <p class="right">Subscribe to our monthly newsletter and be the first to know about our news and special deals!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <p>&copy; 2010-2013, The InterMod Consortium</p>
                 </div>
             </div>
         </div>

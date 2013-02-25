@@ -2,31 +2,34 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff") format('woff');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url("../fonts/OpenSans-Light.woff") format('woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format('woff');
+  src: local('Open Sans'), local('OpenSans'), url("../fonts/OpenSans.woff") format('woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff") format('woff');
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url("../fonts/OpenSans-SemiBold.woff") format('woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff") format('woff');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url("../fonts/OpenSans-Bold.woff") format('woff');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
-  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff") format('woff');
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url("../fonts/OpenSans-ExtraBold.woff") format('woff');
+}
+html {
+  background: #080707;
 }
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -56,6 +59,10 @@ h2 span,
 h3 span {
   color: #999;
 }
+h2 a,
+h3 a {
+  color: inherit;
+}
 p {
   text-align: justify;
 }
@@ -68,14 +75,6 @@ span.date {
   line-height: 1.6;
   display: block;
   margin-bottom: 10px;
-}
-a.button {
-  background: #039cae;
-  padding: 7px 14px;
-  text-transform: uppercase;
-}
-a.button:hover {
-  background: #027d8b;
 }
 header#top {
   padding: 20px;
@@ -132,13 +131,123 @@ section#content {
   background: #fbfbfb url("../img/bg1.png") repeat-x top left;
   padding: 20px 0;
 }
-footer#bottom {
+footer#bottom,
+footer#copyright {
   padding: 30px 0;
   background: url("../img/bg3.png");
   color: #ccc;
 }
 footer#bottom address,
+footer#copyright address,
 footer#bottom p,
-footer#bottom li {
-  font-size: 11px;
+footer#copyright p,
+footer#bottom li,
+footer#copyright li {
+  font-size: 12px;
+}
+footer#copyright {
+  border-top: 1px dashed #333;
+  background: #080707;
+  color: #fff;
+}
+a.btn {
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+  -moz-box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+  -o-box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+  box-shadow: inset 1px 1px 1px rgba(255,255,255,0.3), inset 0 1px 0 rgba(255,255,255,0.2);
+  color: #fff;
+  text-shadow: 1px 1px 0 #444;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+a.btn:hover {
+  border-color: rgba(90,90,90,0.6);
+}
+a.btn:active {
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
+}
+a.btn.bondi {
+  background: #039cae;
+  background-image: linear-gradient(bottom, #026d7a 1%, #039cae 55%);
+  background-image: -o-linear-gradient(bottom, #026d7a 1%, #039cae 55%);
+  background-image: -ms-linear-gradient(bottom, #026d7a 1%, #039cae 55%);
+  background-image: -moz-linear-gradient(bottom, #026d7a 1%, #039cae 55%);
+  background-image: -webkit-linear-gradient(bottom, #026d7a 1%, #039cae 55%);
+  border-color: #027d8b #026571 #025e68 #026d7a;
+}
+a.btn.bondi:hover {
+  background-image: linear-gradient(bottom, #027d8b 1%, #039cae 35%);
+  background-image: -o-linear-gradient(bottom, #027d8b 1%, #039cae 35%);
+  background-image: -ms-linear-gradient(bottom, #027d8b 1%, #039cae 35%);
+  background-image: -moz-linear-gradient(bottom, #027d8b 1%, #039cae 35%);
+  background-image: -webkit-linear-gradient(bottom, #027d8b 1%, #039cae 35%);
+}
+a.btn.picton {
+  background: #52bbec;
+  background-image: linear-gradient(bottom, #1690c9 1%, #52bbec 55%);
+  background-image: -o-linear-gradient(bottom, #1690c9 1%, #52bbec 55%);
+  background-image: -ms-linear-gradient(bottom, #1690c9 1%, #52bbec 55%);
+  background-image: -moz-linear-gradient(bottom, #1690c9 1%, #52bbec 55%);
+  background-image: -webkit-linear-gradient(bottom, #1690c9 1%, #52bbec 55%);
+  border-color: #19a4e5 #1485ba #137bac #1690c9;
+}
+a.btn.picton:hover {
+  background-image: linear-gradient(bottom, #19a4e5 1%, #52bbec 35%);
+  background-image: -o-linear-gradient(bottom, #19a4e5 1%, #52bbec 35%);
+  background-image: -ms-linear-gradient(bottom, #19a4e5 1%, #52bbec 35%);
+  background-image: -moz-linear-gradient(bottom, #19a4e5 1%, #52bbec 35%);
+  background-image: -webkit-linear-gradient(bottom, #19a4e5 1%, #52bbec 35%);
+}
+a.btn.fern {
+  background: #62b974;
+  background-image: linear-gradient(bottom, #3d894d 1%, #62b974 55%);
+  background-image: -o-linear-gradient(bottom, #3d894d 1%, #62b974 55%);
+  background-image: -ms-linear-gradient(bottom, #3d894d 1%, #62b974 55%);
+  background-image: -moz-linear-gradient(bottom, #3d894d 1%, #62b974 55%);
+  background-image: -webkit-linear-gradient(bottom, #3d894d 1%, #62b974 55%);
+  border-color: #469d58 #397f47 #347542 #3d894d;
+}
+a.btn.fern:hover {
+  background-image: linear-gradient(bottom, #469d58 1%, #62b974 35%);
+  background-image: -o-linear-gradient(bottom, #469d58 1%, #62b974 35%);
+  background-image: -ms-linear-gradient(bottom, #469d58 1%, #62b974 35%);
+  background-image: -moz-linear-gradient(bottom, #469d58 1%, #62b974 35%);
+  background-image: -webkit-linear-gradient(bottom, #469d58 1%, #62b974 35%);
+}
+a.btn.jaffa {
+  background: #f26a46;
+  background-image: linear-gradient(bottom, #cc360e 1%, #f26a46 55%);
+  background-image: -o-linear-gradient(bottom, #cc360e 1%, #f26a46 55%);
+  background-image: -ms-linear-gradient(bottom, #cc360e 1%, #f26a46 55%);
+  background-image: -moz-linear-gradient(bottom, #cc360e 1%, #f26a46 55%);
+  background-image: -webkit-linear-gradient(bottom, #cc360e 1%, #f26a46 55%);
+  border-color: #e93e10 #bd320d #af2e0c #cc360e;
+}
+a.btn.jaffa:hover {
+  background-image: linear-gradient(bottom, #e93e10 1%, #f26a46 35%);
+  background-image: -o-linear-gradient(bottom, #e93e10 1%, #f26a46 35%);
+  background-image: -ms-linear-gradient(bottom, #e93e10 1%, #f26a46 35%);
+  background-image: -moz-linear-gradient(bottom, #e93e10 1%, #f26a46 35%);
+  background-image: -webkit-linear-gradient(bottom, #e93e10 1%, #f26a46 35%);
 }

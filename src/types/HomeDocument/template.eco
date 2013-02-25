@@ -1,2 +1,44 @@
-<h1><%= @title %></h1>
-<%- @body %>
+<section id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <h2><span>Lorem ipsum</span> dolor sit amet per qilibtis</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                    commodo, tortor <a href="#">mauris condimentum</a> nibh, ut fermentum massa justo
+                    sit amet risus. Etiam porta sem.</p>
+                <p><a class="btn bondi" href="#">Call to action</a></p>
+            </div>
+            <div class="eight columns">
+                <table id="grid">
+                    <tbody>
+                        <tr>
+                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                            <td><a href="#"><img src="/site/img/wwf.png" /></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<% if @news: %>
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <% for doc in @news: %>
+                    <div class="four columns">
+                        <h3><a href="<%- doc.url %>"><%- doc.title %></a></h3>
+                        <%- doc.body %>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </section>
+<% end %>
