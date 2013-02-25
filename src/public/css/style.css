@@ -272,3 +272,86 @@ a.btn.jaffa:hover {
   background-image: -moz-linear-gradient(bottom, #e93e10 1%, #f26a46 35%);
   background-image: -webkit-linear-gradient(bottom, #e93e10 1%, #f26a46 35%);
 }
+a.tag {
+  margin: 6px 6px 8px 12px;
+  padding: 0 10px 0 12px;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  font-size: 11px;
+}
+a.tag:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+}
+a.tag:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+a.tag.bondi {
+  background: #039cae;
+  color: #fff;
+  text-shadow: 1px 1px 0 #027d8b;
+}
+a.tag.bondi:before {
+  border-color: transparent #039cae transparent transparent;
+}
+a.tag.bondi:after {
+  background: #fff;
+}
+a.tag.picton {
+  background: #52bbec;
+  color: #fff;
+  text-shadow: 1px 1px 0 #19a4e5;
+}
+a.tag.picton:before {
+  border-color: transparent #52bbec transparent transparent;
+}
+a.tag.picton:after {
+  background: #fff;
+}
+a.tag.fern {
+  background: #62b974;
+  color: #fff;
+  text-shadow: 1px 1px 0 #469d58;
+}
+a.tag.fern:before {
+  border-color: transparent #62b974 transparent transparent;
+}
+a.tag.fern:after {
+  background: #fff;
+}
+a.tag.jaffa {
+  background: #f26a46;
+  color: #fff;
+  text-shadow: 1px 1px 0 #e93e10;
+}
+a.tag.jaffa:before {
+  border-color: transparent #f26a46 transparent transparent;
+}
+a.tag.jaffa:after {
+  background: #fff;
+}

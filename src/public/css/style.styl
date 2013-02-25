@@ -239,3 +239,50 @@ a.btn
 
             &:hover
                 background-linear-gradient(bottom, darken(color[1], 20%) 1%, color[1] 35%)
+
+a.tag
+    margin: 6px 6px 8px 12px
+    padding: 0 10px 0 12px
+    border-radius(0 4px 4px 0)
+    background-clip()
+    display: inline-block
+    height: 24px
+    line-height: 24px
+    position: relative
+    font-size: 11px
+
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: -12px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 12px 12px 12px 0
+
+    &:after
+        content: ""
+        position: absolute
+        top: 10px
+        left: 0
+        width: 4px
+        height: 4px
+        border-radius(2px)
+        background-clip()
+
+    for color in (bondi $bondi) (picton $picton) (fern $fern) (jaffa $jaffa)
+        &.{color[0]}
+            background: color[1]
+            if light(darken(color[1], 20%))
+                color: #333
+                text-shadow: 1px 1px 0 rgba(255,255,255,0.5)
+            else
+                color: #fff
+                text-shadow: 1px 1px 0 darken(color[1], 20%)
+
+            &:before
+                border-color: transparent color[1] transparent transparent
+
+            &:after
+                background: #FFF
