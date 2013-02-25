@@ -141,13 +141,7 @@ section#content table td {
   vertical-align: middle;
 }
 section#content table p {
-  font-size: 13px;
-}
-section#content table h3 {
-  font-size: 16px;
-}
-section#content table h3 a {
-  color: #039cae;
+  font-size: 11px;
 }
 section#content table thead {
   background: transparent;

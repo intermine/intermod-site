@@ -9,7 +9,7 @@
                     <tbody>
                         <% for resource in @resources: %>
                             <tr>
-                                <td><h3><a href="<%= resource.link %>" target="_blank"><%- resource.name %></a></h3></td>
+                                <td><a href="<%= resource.link %>" target="_blank"><%- resource.name %></a></td>
                                 <td>
                                     <%- resource.body %>
                                     <a class="tag bondi">bondi</a>

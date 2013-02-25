@@ -1,6 +1,6 @@
 # InterMOD site
 
-An example site powered by [blað](https://github.com/radekstepan/blad) CMS.
+An InterMOD project site powered by [blað](https://github.com/radekstepan/blad) CMS.
 
 ## Features
 
@@ -13,6 +13,12 @@ An example site powered by [blað](https://github.com/radekstepan/blad) CMS.
     <dd>Contains an image and a link to a model organism project website. Should be kept private.</dd>
     <dt>NewsDocument</dt>
     <dd>Similar to a BasicDocument just a different type so we can filter on these in a HomeDocument.</dd>
+    <dt>ResourcesHolderDocument</dt>
+    <dd>Will display ResourceDocuments in a table.</dd>
+    <dt>ResourceDocument</dt>
+    <dd>Captures a name, description and a link to a resource. Should be kept private.</dd>
+    <dt>PublicationsHolderDocument</dt>
+    <dd>Will either use a cache or fetch publications from PubMed to display them in a table by their date.</dd>
 </dl>
 
 ## Getting started
