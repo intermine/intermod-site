@@ -14,10 +14,10 @@
                 <a class="brand five columns" href="/"></a>
                 <nav class="seven columns">
                     <ul class="right">
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Papers</a></li>
+                        <li><a <% if @url is '/': %>class="active"<% end %> href="/">Home</a></li>
+                        <li><a <% if @url is '/about-us': %>class="active"<% end %> href="/about-us">About Us</a></li>
+                        <li><a <% if @url is '/resources': %>class="active"<% end %> href="/resources">Resources</a></li>
+                        <li><a <% if @url is '/papers': %>class="active"<% end %> href="/papers">Papers</a></li>
                     </ul>
                 </nav>
             </div>
