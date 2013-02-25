@@ -2,6 +2,19 @@
 
 An example site powered by [blað](https://github.com/radekstepan/blad) CMS.
 
+## Features
+
+<dl>
+    <dt>BasicDocument</dt>
+    <dd>A basic document with a title and a Markdown powered body</dd>
+    <dt>HomeDocument</dt>
+    <dd>Fetches NewsDocuments and displays them based on their modification date. Fetches ModDocuments and displays them in a grid of 3 columns.</dd>
+    <dt>ModDocument</dt>
+    <dd>Contains an image and a link to a model organism project website. Should be kept private.</dd>
+    <dt>NewsDocument</dt>
+    <dd>Similar to a BasicDocument just a different type so we can filter on these in a HomeDocument.</dd>
+</dl>
+
 ## Getting started
 
 The CMS that powers the site is developed in [Node.js](http://nodejs.org/), download the tarball and install it if not present:

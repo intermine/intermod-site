@@ -1,0 +1,21 @@
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <h1><%- @title %></h1>
+                <%- @body %>
+
+                <table>
+                    <tbody>
+                        <% for resource in @resources: %>
+                            <tr>
+                                <td><h3><a href="<%= resource.link %>" target="_blank"><%- resource.name %></a></h3></td>
+                                <td><%- resource.body %></td>
+                            </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

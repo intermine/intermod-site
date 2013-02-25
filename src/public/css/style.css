@@ -134,6 +134,24 @@ section#content {
   background: #fbfbfb url("../img/bg1.png") repeat-x top left;
   padding: 20px 0;
 }
+section#content table {
+  margin: 20px 0;
+}
+section#content table td {
+  vertical-align: middle;
+}
+section#content table p {
+  font-size: 13px;
+}
+section#content table h3 {
+  font-size: 16px;
+}
+section#content table h3 a {
+  color: #039cae;
+}
+section#content table thead {
+  background: transparent;
+}
 footer#bottom,
 footer#copyright {
   padding: 30px 0;
