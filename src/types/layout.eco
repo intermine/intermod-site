@@ -30,17 +30,13 @@
         <div class="container">
             <div class="row">
                 <div class="four columns">
-                    <address>
-                        <strong>Address</strong>: Street 9890, New Something 1234, Country<br />
-                        <strong>Telephone</strong>: 1234 5678<br />
-                        <strong>Fax</strong>: 9876 5432<br />
-                    </address>
+                    
                 </div>
                 <div class="four columns">
-                    <p>InterMOD is financed from grants AG:2115454, AF:4544554 by <a href="#">Wellcome Trust Inc.</a></p>
+                    <p>InterMOD is funded through a grant from the <a href="http://www.genome.gov"> U.S. NIH/NHGRI </a></p>
                 </div>
                 <div class="four columns">
-                    <p class="right">Subscribe to our monthly newsletter and be the first to know about our news and special deals!</p>
+                    <p class="right">Contact us</p>
                 </div>
             </div>
         </div>
