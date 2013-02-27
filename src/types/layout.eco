@@ -30,13 +30,14 @@
         <div class="container">
             <div class="row">
                 <div class="four columns">
+                    <p>InterMOD is funded through a grant from the <a href="http://www.genome.gov" target="_new"> U.S. NIH/NHGRI </a></p>
+                </div>
+                <div class="four columns">
                     
                 </div>
+
                 <div class="four columns">
-                    <p>InterMOD is funded through a grant from the <a href="http://www.genome.gov"> U.S. NIH/NHGRI </a></p>
-                </div>
-                <div class="four columns">
-                    <p class="right">Contact us</p>
+                    <p class="right"><a href="http://intermine.readthedocs.org/en/latest/about/contact-us/" target="_new">Contact us</a>: Follow us on <a href="https://twitter.com/intermineorg" target="_new">Twitter</a> or join our <a href="http://intermine.readthedocs.org/en/latest/support/mailing-list/" target="_new">mailing list</a>.</p>
                 </div>
             </div>
         </div>
