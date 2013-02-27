@@ -4,7 +4,7 @@
             <div class="four columns">
                 <h2><%- @title %></h2>
                 <%- @body %>
-                <p><a class="btn bondi" href="#">Call to action</a></p>
+                <p><a class="btn bondi" href="/about-us">Read More</a></p>
             </div>
             <div class="eight columns">
                 <table id="grid">
