@@ -12,10 +12,12 @@
                                 <td><a href="<%= resource.link %>" target="_blank"><%- resource.name %></a></td>
                                 <td>
                                     <%- resource.body %>
+                                    <!--
                                     <a class="tag bondi">bondi</a>
                                     <a class="tag picton">picton</a>
                                     <a class="tag fern">fern</a>
                                     <a class="tag jaffa">jaffa</a>
+                                    -->
                                 </td>
                             </tr>
                         <% end %>

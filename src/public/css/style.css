@@ -117,6 +117,7 @@ section#hero table#grid tr {
 }
 section#hero table#grid tr td {
   vertical-align: middle;
+  text-align: center;
 }
 section#hero table#grid tr td:not(:last-child) {
   border-right: 1px dashed #ddd;
@@ -140,8 +141,14 @@ section#content table {
 section#content table td {
   vertical-align: middle;
 }
+section#content table td span.author:not(:last-child):after {
+  content: ", ";
+  display: inline-block;
+  margin-right: 2px;
+}
 section#content table p {
   font-size: 11px;
+  margin: 0;
 }
 section#content table thead {
   background: transparent;

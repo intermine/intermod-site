@@ -158,6 +158,7 @@ section#hero
 
             td
                 vertical-align: middle
+                text-align: center
 
                 &:not(:last-child)
                     border-right: 1px dashed #ddd
@@ -183,8 +184,14 @@ section#content
         td
             vertical-align: middle
 
+            span.author:not(:last-child):after
+                content: ", "
+                display: inline-block
+                margin-right: 2px
+
         p
             font-size: 11px
+            margin: 0
 
         thead
             background: transparent
