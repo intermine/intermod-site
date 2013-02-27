@@ -29,7 +29,7 @@
             <div class="row">
                 <% for doc in @news: %>
                     <div class="four columns">
-                        <h3><a href="<%- doc.url %>"><%- doc.title %></a></h3>
+                        <h3><%- doc.title %></h3>
                         <%- doc.body %>
                     </div>
                 <% end %>
