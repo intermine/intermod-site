@@ -25,6 +25,9 @@ class exports.HomeDocument extends blað.Type
                 if a.modified is b.modified then 0
                 else -1
 
+        # Sort mods semi-randomly.
+        mods.sort -> 0.5 - Math.random()
+
         # Make mods into groups of 3.
         @mods = [] ; idx = 0
         for i, obj of mods
