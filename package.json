@@ -3,7 +3,7 @@
     "author": "Radek <rs676@cam.ac.uk>",
     "version": "1.0.1",
     "dependencies": {
-        "blad": "latest",
+        "blad": "3.0.7",
         "marked": "0.2.5",
         "kronic-node": "0.0.1",
         "request": "2.9.203",

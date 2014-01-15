@@ -1,8 +1,8 @@
 {
-    "mongodb": "mongodb://localhost:27017/intermod-site",
+    "mongodb": "set process.env.MONGO_URL",
     "browserid": {
         "provider": "https://browserid.org/verify",
-        "salt":     "set API_SALT in env",
+        "salt":     "set process.env.API_SALT",
         "users": [
             "radek.stepan@gmail.com",
             "julie@flymine.org"
