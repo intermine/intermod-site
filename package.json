@@ -1,7 +1,7 @@
 {
     "name": "intermod-site",
     "author": "Radek <rs676@cam.ac.uk>",
-    "version": "1.0.1-alpha4",
+    "version": "1.0.1-alpha5",
     "dependencies": {
         "blad": "3.0.8",
         "marked": "0.2.5",
