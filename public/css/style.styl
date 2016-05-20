@@ -1,0 +1,289 @@
+background-linear-gradient(sPoint, sColor, eColor)
+    background-image: linear-gradient(sPoint, sColor, eColor)
+    background-image: -o-linear-gradient(sPoint, sColor, eColor)
+    background-image: -ms-linear-gradient(sPoint, sColor, eColor)
+    background-image: -moz-linear-gradient(sPoint, sColor, eColor)
+    background-image: -webkit-linear-gradient(sPoint, sColor, eColor)
+
+box-shadow(a, b=false)
+    if b
+        -webkit-box-shadow: a, b
+        -moz-box-shadow: a, b
+        -o-box-shadow: a, b
+        box-shadow: a, b
+    else
+        -webkit-box-shadow: a
+        -moz-box-shadow: a
+        -o-box-shadow: a
+        box-shadow: a
+
+border-radius(r)
+    -webkit-border-radius: r
+    -moz-border-radius: r
+    border-radius: r
+
+background-clip()
+    -webkit-background-clip: padding-box
+    -moz-background-clip: padding
+    background-clip: padding-box
+
+transition(t)
+    -webkit-transition: t
+    -moz-transition: t
+    -ms-transition: t
+    -o-transition: t
+    transition: t
+
+$bondi = #039CAE // sea
+$picton = #52BBEC // blue
+$fern = #62B974 // green
+$jaffa = #f26a46 // orange
+
+@font-face {
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/OpenSans-Light.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('../fonts/OpenSans.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 600
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/OpenSans-SemiBold.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/OpenSans-Bold.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 800
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('../fonts/OpenSans-ExtraBold.woff') format('woff')
+}
+
+html
+    background: #080707
+
+body
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+    margin: 0
+
+a
+    color: $bondi
+
+    &:hover
+        color: darken($bondi, 10%)
+
+ul
+    list-style-type: none
+
+table
+    border-collapse: collapse
+    border: 0
+    width: 100%
+
+h2
+    font-size: 28px
+
+h3
+    font-size: 24px
+
+h2, h3
+    span
+        color: #999
+    a
+        color: inherit
+
+p
+    text-align: justify
+
+address
+    font-style: normal
+    line-height: 1.6
+
+span.date
+    color: grey
+    line-height: 1.6
+    display: block
+    margin-bottom: 10px
+
+header#top
+    padding: 20px
+
+    a.brand
+        background: url('../img/224x68.png') no-repeat top left
+        width: 224px
+        height: 68px
+        display: block
+
+    nav
+        ul
+            margin: 25px 0 0 0
+
+            li
+                display: inline-block
+
+                &:not(:first-child)
+                    margin-left: 10px
+
+                a
+                    color: #444
+                    padding: 9px 10px 11px
+                    text-shadow: 0 -1px 0 rgba(255,255,255,.25)
+
+                    &:hover
+                        border-bottom: 1px solid #ccc
+
+                    &.active
+                        border-bottom: 1px solid #aaa
+
+section#hero
+    background: #F6F7F6 url('../img/bg2.png') repeat-x top left
+    padding: 30px 0 20px 0
+
+    table#grid
+        background: transparent
+
+        tr
+            background: transparent
+
+            td
+                vertical-align: middle
+                text-align: center
+
+                &:not(:last-child)
+                    border-right: 1px dashed #ddd
+
+                img
+                    opacity: 0.8
+
+                &:hover
+                    img
+                        opacity: 1
+
+            &:not(:last-child)
+                td
+                    border-bottom: 1px dashed #ddd
+
+section#content
+    background: #fff url('../img/bg1.png') repeat-x top left
+    padding: 20px 0
+
+    table
+        margin: 20px 0
+
+        td
+            vertical-align: middle
+
+            span.author:not(:last-child):after
+                content: ", "
+                display: inline-block
+                margin-right: 2px
+
+        p
+            font-size: 11px
+            margin: 0
+
+        thead
+            background: transparent
+
+footer#bottom, footer#copyright
+    padding: 30px 0
+    background: url('../img/bg3.png')
+    color: #ccc
+
+    address, p, li
+        font-size: 12px
+
+footer#copyright
+    border-top: 1px dashed darken(#ccc, 75%)
+    background: #080707
+    color: #FFF
+
+a.btn
+    border-style: solid
+    border-width: 1px
+    border-radius(2px)
+    box-shadow(inset 1px 1px 1px rgba(255,255,255,.3), inset 0 1px 0 rgba(255,255,255,.2))
+    color: #FFF
+    text-shadow: 1px 1px 0 #444
+    transition(all .2s ease)
+    background-clip()
+    display: inline-block
+    position: relative
+    text-decoration: none
+    cursor: pointer
+    padding: 6px 12px
+    font-weight: 400
+    vertical-align: middle
+
+    &:hover
+        border-color: rgba(90,90,90,.6)
+
+    &:active
+        box-shadow(0 0 10px rgba(0,0,0,.3) inset)
+
+    for color in (bondi $bondi) (picton $picton) (fern $fern) (jaffa $jaffa)
+        &.{color[0]}
+            background: color[1]
+            background-linear-gradient(bottom, darken(color[1], 30%) 1%, color[1] 55%)
+            border-color: darken(color[1], 20%) darken(color[1], 35%) darken(color[1], 40%) darken(color[1], 30%)
+
+            &:hover
+                background-linear-gradient(bottom, darken(color[1], 20%) 1%, color[1] 35%)
+
+a.tag
+    margin: 6px 6px 8px 12px
+    padding: 0 10px 0 12px
+    border-radius(0 4px 4px 0)
+    background-clip()
+    display: inline-block
+    height: 24px
+    line-height: 24px
+    position: relative
+    font-size: 11px
+
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: -12px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 12px 12px 12px 0
+
+    &:after
+        content: ""
+        position: absolute
+        top: 10px
+        left: 0
+        width: 4px
+        height: 4px
+        border-radius(2px)
+        background-clip()
+
+    for color in (bondi $bondi) (picton $picton) (fern $fern) (jaffa $jaffa)
+        &.{color[0]}
+            background: color[1]
+            if light(darken(color[1], 20%))
+                color: #333
+                text-shadow: 1px 1px 0 rgba(255,255,255,0.5)
+            else
+                color: #fff
+                text-shadow: 1px 1px 0 darken(color[1], 20%)
+
+            &:before
+                border-color: transparent color[1] transparent transparent
+
+            &:after
+                background: #FFF

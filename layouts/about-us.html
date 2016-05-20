@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section id="content">
+  <div class="container">
+    <div class="row bismark">
+      <!-- main content -->
+      <article class="main twelve columns">
+        <h1>{{ title }}</h1>
+        {% parent %}
+      </article>
+    </div>
+  </div>
+</section>
+{% endblock content %}

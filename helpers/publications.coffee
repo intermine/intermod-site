@@ -5,6 +5,8 @@ additions = require './additions.coffee'
 E_SEARCH = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=999&term='
 E_SUMMARY = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id='
 
+
+
 module.exports = (data, cb) =>
     # Which author are we fetching publications for?
     author = encodeURIComponent "#{data.author}[author]"
@@ -14,8 +16,8 @@ module.exports = (data, cb) =>
 
       additions.xmlToIds body, (ids) =>
         # Enrich with extra identifiers not returned by the above query.
-        if 'extraIds' in data
-          ids = ids.concat data.extraIds.replace(/\s/g, '').split(',')
+        if data.extraIds
+          ids = ids.concat data.extraIds
 
         # Grab hold of the actual publications.
         request E_SUMMARY + ids.join(','), (err, res, body) =>
