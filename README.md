@@ -2,6 +2,9 @@
 
 An InterMOD project site powered by [blað](https://github.com/radekstepan/blad) CMS.
 
+http://crossmodel.org/
+http://intermod-site.apps.intermine.org/
+
 ## Features
 
 <dl>
